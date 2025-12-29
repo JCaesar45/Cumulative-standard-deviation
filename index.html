@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Population Standard Deviation Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Standard Deviation Lab</h1>
+      <p>Population-based statistical analysis with exact precision</p>
+    </header>
+
+    <section class="input-section">
+      <label for="numbers">Enter numbers (comma-separated)</label>
+      <textarea
+        id="numbers"
+        placeholder="Example: 2, 4, 4, 4, 5, 5, 7, 9"
+      ></textarea>
+      <button id="calculate">Calculate</button>
+    </section>
+
+    <section class="results">
+      <div class="card">
+        <h2>Mean</h2>
+        <span id="mean">—</span>
+      </div>
+      <div class="card">
+        <h2>Variance</h2>
+        <span id="variance">—</span>
+      </div>
+      <div class="card highlight">
+        <h2>Standard Deviation</h2>
+        <span id="stddev">—</span>
+      </div>
+    </section>
+
+    <section class="breakdown">
+      <h2>Calculation Breakdown</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>Deviation</th>
+            <th>Squared Deviation</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </section>
+
+    <footer>
+      <span>Population Standard Deviation • Exact Formula • Deterministic Output</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
